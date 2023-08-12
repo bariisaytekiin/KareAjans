@@ -1,0 +1,453 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\KareAjans.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\KareAjans.MVC.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\admin-template\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\admin-template\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\admin-template\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\admin-template\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\admin-template\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\css\\styles.css",
+      "PackagePath": "staticwebassets\\admin-template\\css\\styles.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\index.html",
+      "PackagePath": "staticwebassets\\admin-template\\index.html"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\admin-template\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\admin-template\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\admin-template\\js\\scripts.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\042407ff-122e-4021-9fa3-2b65994bfd51.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\042407ff-122e-4021-9fa3-2b65994bfd51.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\2cf9d33a-51ba-4d1e-a464-5535e9037e29.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\2cf9d33a-51ba-4d1e-a464-5535e9037e29.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\2da6d401-1a7b-4eaa-9811-93faf0fd4b7f.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\2da6d401-1a7b-4eaa-9811-93faf0fd4b7f.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\2fbb2cb5-324a-4504-814b-d82c16ccda35.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\2fbb2cb5-324a-4504-814b-d82c16ccda35.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\306673c1-40ef-4142-9b01-c42b0658fcae.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\306673c1-40ef-4142-9b01-c42b0658fcae.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\332b2965-b624-4b81-8375-81cb485a3334.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\332b2965-b624-4b81-8375-81cb485a3334.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\391bb8f4-1a77-4a57-b512-51076ddff90b.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\391bb8f4-1a77-4a57-b512-51076ddff90b.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\3cbe6a5b-0f9d-4d12-a1f9-d6dda2fca421.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\3cbe6a5b-0f9d-4d12-a1f9-d6dda2fca421.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\3ded9f4a-1d1d-4253-b06f-6b8cfd60d8bd.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\3ded9f4a-1d1d-4253-b06f-6b8cfd60d8bd.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\416facfa-b595-4ce0-9e91-e12af973f8fb.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\416facfa-b595-4ce0-9e91-e12af973f8fb.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\46ad8494-e3cb-46d4-aed0-16e1ac3dc575.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\46ad8494-e3cb-46d4-aed0-16e1ac3dc575.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\492addbc-a3cb-4ce9-9c83-b9e02767a920.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\492addbc-a3cb-4ce9-9c83-b9e02767a920.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\5df323cf-574b-404d-8224-bcd55fde2f16.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\5df323cf-574b-404d-8224-bcd55fde2f16.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\5e189c37-5a74-41a8-935a-c2920e6a813c.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\5e189c37-5a74-41a8-935a-c2920e6a813c.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\6a044382-7825-4566-b994-f1eb95a5935a.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\6a044382-7825-4566-b994-f1eb95a5935a.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\774d6478-eea2-45eb-ae9b-34fc8b83f3c5.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\774d6478-eea2-45eb-ae9b-34fc8b83f3c5.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\78c440c7-449b-4329-a1d5-c7463c6e8f18.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\78c440c7-449b-4329-a1d5-c7463c6e8f18.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\87a3db91-e98d-4a3e-9e22-ece9d69c1d76.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\87a3db91-e98d-4a3e-9e22-ece9d69c1d76.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\8c44c5b6-c9d3-4592-b213-1ae86b463b17.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\8c44c5b6-c9d3-4592-b213-1ae86b463b17.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\913b179f-54bd-415a-ba68-4d71cb3077d3.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\913b179f-54bd-415a-ba68-4d71cb3077d3.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\97a49173-97bd-4b5b-bc94-45411ccefbb7.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\97a49173-97bd-4b5b-bc94-45411ccefbb7.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\9d69b230-c489-404b-bad8-a6f72d18a86b.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\9d69b230-c489-404b-bad8-a6f72d18a86b.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\a3bcbc29-e1f9-4a38-87c1-e300aaaa55e9.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\a3bcbc29-e1f9-4a38-87c1-e300aaaa55e9.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\a9d36e59-88bf-46c4-9030-373b209b5431.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\a9d36e59-88bf-46c4-9030-373b209b5431.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\af56d343-ae22-4f7f-82a7-ce5230244d2a.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\af56d343-ae22-4f7f-82a7-ce5230244d2a.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\c923a863-e7a8-412f-a604-c6b60a6889fc.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\c923a863-e7a8-412f-a604-c6b60a6889fc.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\ce50dbc9-5325-4250-9f2c-25e2d7199f33.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\ce50dbc9-5325-4250-9f2c-25e2d7199f33.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\da6be809-ce6b-4fa6-ae5e-3eeb5edc7f1e.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\da6be809-ce6b-4fa6-ae5e-3eeb5edc7f1e.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\de525d7b-1c75-475b-996c-4c7c7e78b757.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\de525d7b-1c75-475b-996c-4c7c7e78b757.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\e6b59edc-e71c-4b20-8dbd-f529ee362867.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\e6b59edc-e71c-4b20-8dbd-f529ee362867.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\ed0dec5a-b1a4-4934-9b35-57bc1ebf66d6.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\ed0dec5a-b1a4-4934-9b35-57bc1ebf66d6.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\f3129c7b-66be-4409-b65e-80939f808f96.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\f3129c7b-66be-4409-b65e-80939f808f96.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\f4aef061-37a2-4ab6-831f-b996d428478d.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\f4aef061-37a2-4ab6-831f-b996d428478d.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\images\\manken\\fc611d38-3916-4b03-84dc-b7706862d084.jpg",
+      "PackagePath": "staticwebassets\\images\\manken\\fc611d38-3916-4b03-84dc-b7706862d084.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\model-template\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\model-template\\assets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\model-template\\css\\styles.css",
+      "PackagePath": "staticwebassets\\model-template\\css\\styles.css"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\model-template\\index.html",
+      "PackagePath": "staticwebassets\\model-template\\index.html"
+    },
+    {
+      "Id": "D:\\Documents\\Desktop\\Bilge Adam\\Kare Ajans\\KareAjansProject\\KareAjans.MVC\\wwwroot\\model-template\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\model-template\\js\\scripts.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.KareAjans.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.KareAjans.MVC.props",
+      "PackagePath": "build\\KareAjans.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.KareAjans.MVC.props",
+      "PackagePath": "buildMultiTargeting\\KareAjans.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.KareAjans.MVC.props",
+      "PackagePath": "buildTransitive\\KareAjans.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

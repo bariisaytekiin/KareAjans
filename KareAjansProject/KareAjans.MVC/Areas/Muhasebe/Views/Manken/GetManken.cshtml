@@ -1,0 +1,242 @@
+﻿@model OrganizasyonGeliGiderVM
+@{
+    ViewData["Title"] = "GetManken";
+    Layout = "~/Views/Shared/_MuhasebeLayout.cshtml";
+    var manken = Model.Mankenler.Where(x => x.Id == ViewBag.Manken.Id).FirstOrDefault();
+}
+
+<h3>Manken Bilgileri</h3>
+<br />
+<div class="container bootstrap snippets bootdey">
+    <div class="panel-body inf-content">
+        <div class="row">
+                        <div class="col-md-6">
+                <div class="table-responsive">
+                    <table class="table table-user-information">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-user  text-primary"></span>
+                                        Ad
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.Ad
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-cloud text-primary"></span>
+                                        Soyad
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.Soyad
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-envelope text-primary"></span>
+                                        Cinsiyet
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.Cinsiyet
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Doğum Tarihi
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.DogumTarihi.ToString("dd/MM/yyyy")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Kategori
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @switch (@manken.Kategori)
+                                    {
+                                        case KareAjans.Entity.Enums.MankenKategori.Kategori1:
+                                            <span>1. Kategori</span>
+                                            break;
+                                        case KareAjans.Entity.Enums.MankenKategori.Kategori2:
+                                            <span>2. Kategori</span>
+                                            break;
+                                        case KareAjans.Entity.Enums.MankenKategori.Kategori3:
+                                            <span>3. Kategori</span>
+                                            break;
+                                    }
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Boy
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.Boy
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Kilo
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.Kilo
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Beden
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.Beden
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Saç Rengi
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.SacRengi
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Göz Rengi
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @manken.GozRengi
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Ehliyet
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @switch (@manken.Ehliyet)
+                                    {
+                                        case true:
+                                            <span>Var</span>
+                                            break;
+                                        case false:
+                                            <span>Yok</span>
+                                            break;
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Şehir Dışı Çalışma
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    @switch (@manken.SehirDisiCalisma)
+                                    {
+                                        case true:
+                                            <span>Çalışabilir</span>
+                                            break;
+                                        case false:
+                                            <span>Çalışamaz</span>
+                                            break;
+                                    }
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<div>
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h5>Katıldığı Organizasyonlar</h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Organizasyon Id</th>
+                        <th>Organizasyon Adıı</th>
+                        <th>Başlangıç Tarihi</th>
+                        <th>Bitiş Tarihi</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Organizasyonlar)
+                    {
+                        if (Model.OrganizasyonGiderleri.Where(x=>x.OrganizasyonId==item.Id).Select(x=>x.MankenId).FirstOrDefault()==manken.Id)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.OrganizasyonAdi</td>
+                                <td>@item.BaslangicTarihi.ToString("dd/MM/yyyy")</td>
+                                <td>@item.BitisTarihi.ToString("dd/MM/yyyy")</td>
+                                <td>
+                                    <a href="/muhasebe/organizasyon/details/@item.Id" class="btn btn-primary btn-sm">Detay</a>
+                                </td>
+                            </tr>
+                        }
+                        
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <br />
+    @{
+        Html.BeginForm("CreatePDFDocument", "Manken", FormMethod.Get);
+        {
+            <div>
+                <input type="hidden" name="id" value="@manken.Id" />
+                <input type="submit" value="PDF Dönüştür" style="width:300px;height:27px" />
+            </div>
+        }
+        Html.EndForm();
+    }
+</div>
+<br />
+<br />
+<br />
+<br />
+

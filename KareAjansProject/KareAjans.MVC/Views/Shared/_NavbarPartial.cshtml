@@ -1,0 +1,109 @@
+﻿@{
+    var sepet = Kareajans.MVC.Utils.SessionHelper.GetProductFromJson<Kareajans.Common.Cart>(Context.Session, "organizasyon");
+
+}
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Kare Ajans</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Hakkimizda">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Referanslar">Referanslar</a>
+                </li>
+                <li class="nav-item">
+                    <div class="btn-group">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mankenler
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Manken" asp-action="Index" >Mankenler</a></li>
+                            <li><a class="dropdown-item" asp-controller="Manken" asp-action="Index" asp-route-cinsiyet="Kadın"  >Kadın Mankenler</a></li>
+                            <li><a class="dropdown-item" asp-controller="Manken" asp-action="Index" asp-route-cinsiyet="Erkek">Erkek Mankenler</a></li>
+                            <li><a class="dropdown-item" asp-controller="Manken" asp-action="Index" asp-route-yas="18">Çocuk Mankenler</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Organizasyonlar">Organizasyonlar</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a asp-action="MyOrganization" asp-controller="Home" class="btn btn-outline-dark me-md-2" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+
+                        @if (sepet != null)
+                        {
+
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">@sepet._myCart.Count</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        }
+
+                    </a>
+                </li>
+                <li class="nav-item">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                @User.Identity.Name
+                            </a>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/admin/home/index">Admin Sayfası</a></li>
+                                    <li><a class="dropdown-item" asp-action="Logout" asp-controller="User">Logout</a></li>
+                                </ul>
+                            }
+                            @if (User.IsInRole("Model"))
+                            {
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-area="Model" asp-controller="Manken" asp-action="GetManken" asp-route-id=@TempData["MankenId"]>Profil </a></li>
+                                    <li><a class="dropdown-item" asp-action="Logout" asp-controller="User">Logout</a></li>
+                                </ul>
+                            }
+                            @if (User.IsInRole("Muhasebe"))
+                            {
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-action="Profile" asp-controller="User">Profil</a></li>
+                                    <li><a class="dropdown-item" asp-action="Logout" asp-controller="User">Logout</a></li>
+                                </ul>
+                            }
+                            else
+                            {
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-action="Profile" asp-controller="User">Profil</a></li>
+                                    <li><a class="dropdown-item" asp-action="Logout" asp-controller="User">Logout</a></li>
+
+                                </ul>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <a asp-action="Login" asp-controller="Home" class="btn btn-primary me-md-2">Login</a>
+                        <a asp-action="Register" asp-controller="Home" class="btn btn-outline-primary">Register</a>
+                    }
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

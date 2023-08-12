@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KareAjans.BLL\KareAjans.BLL.csproj" />
+    <ProjectReference Include="..\KareAjans.Common\KareAjans.Common.csproj" />
+    <ProjectReference Include="..\KareAjans.DAL\KareAjans.DAL.csproj" />
+    <ProjectReference Include="..\KareAjans.Entity\KareAjans.Entity.csproj" />
+    <ProjectReference Include="..\KareAjans.IOC\KareAjans.IOC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Model\Data\" />
+    <Folder Include="Areas\Model\Models\" />
+    <Folder Include="Areas\Muhasebe\Data\" />
+    <Folder Include="Areas\Muhasebe\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="22.2.8" />
+  </ItemGroup>
+
+</Project>

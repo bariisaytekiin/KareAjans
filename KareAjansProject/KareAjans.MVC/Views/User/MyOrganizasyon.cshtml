@@ -1,0 +1,50 @@
+﻿@model List<Order>
+@{
+    ViewData["Title"] = "MyOrganizasyon";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h5>Organizasyonlarım</h5>
+               
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Organizasyon Numarası</th>
+                        <th>Şehir</th>
+                        <th>Adres</th>
+                        <th>Başlangıç Tarihi</th>
+                        <th>Bitiş Tarihi</th>
+                        <th>Onaylama</th>
+                        <th>Ödenecek Tutar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.OrganizasyonNumarasi</td>
+                            <td>@item.OrganizasyonSehirAdresi</td>
+                            <td>@item.OrganizasyonAdresi</td>
+                            <td>@item.BaslangicTarihi.ToString("dd/MM/yyyy")</td>
+                            <td>@item.BitisTarihi.ToString("dd/MM/yyyy")</td>
+                            <td>@item.Onaylama</td>
+                            <td>
+                                
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

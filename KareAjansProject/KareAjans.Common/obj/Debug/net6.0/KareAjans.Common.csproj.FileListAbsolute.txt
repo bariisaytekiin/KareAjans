@@ -1,0 +1,15 @@
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\bin\Debug\net6.0\KareAjans.Common.deps.json
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\bin\Debug\net6.0\KareAjans.Common.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\bin\Debug\net6.0\KareAjans.Common.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.csproj.AssemblyReference.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.AssemblyInfoInputs.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.AssemblyInfo.cs
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.csproj.CoreCompileInputs.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\refint\KareAjans.Common.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\ref\KareAjans.Common.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\bin\Debug\net6.0\KareAjans.Entity.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\bin\Debug\net6.0\KareAjans.Entity.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.Common\obj\Debug\net6.0\KareAjans.Common.csproj.CopyComplete

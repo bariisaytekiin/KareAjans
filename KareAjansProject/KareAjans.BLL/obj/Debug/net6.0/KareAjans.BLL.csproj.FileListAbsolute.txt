@@ -1,0 +1,17 @@
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\bin\Debug\net6.0\KareAjans.BLL.deps.json
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\bin\Debug\net6.0\KareAjans.BLL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\bin\Debug\net6.0\KareAjans.BLL.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.csproj.AssemblyReference.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.AssemblyInfoInputs.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.AssemblyInfo.cs
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.csproj.CoreCompileInputs.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\refint\KareAjans.BLL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\ref\KareAjans.BLL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\bin\Debug\net6.0\KareAjans.DAL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\bin\Debug\net6.0\KareAjans.Entity.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\bin\Debug\net6.0\KareAjans.DAL.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\bin\Debug\net6.0\KareAjans.Entity.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.BLL\obj\Debug\net6.0\KareAjans.BLL.csproj.CopyComplete

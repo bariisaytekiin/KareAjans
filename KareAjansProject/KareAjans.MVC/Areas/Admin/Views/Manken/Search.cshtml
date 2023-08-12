@@ -1,0 +1,199 @@
+﻿@model List<Manken>
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <form class="form-horizontal" asp-action="Search" asp-controller="Manken" method="get">
+
+        <div class="card-body">
+            <div class="card-title"><h2>Manken Arama / Atama</h2></div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">İsim:</label>
+                        <div class="col-md-9">
+                            <input type="text" name="firstName" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Soyisim:</label>
+                        <div class="col-md-9">
+                            <input type="text" name="lastName" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Cinsiyet:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="gender" asp-items="Html.GetEnumSelectList<KareAjans.Entity.Enums.Cinsiyet>()">
+                                <option value="">Hepsi</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Profesyonellik Dereceleri:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="professionalDegreeId" asp-items="Html.GetEnumSelectList<KareAjans.Entity.Enums.MankenKategori>()">
+                                <option value="">Hepsi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row m-t-20">
+                        <label class="col-sm-3 text-right control-label col-form-label">Yaş:</label>
+                        <div class="col-md-9">
+                            <input type="number" name="age" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Kilo:</label>
+                        <div class="col-md-9">
+                            <input type="number" name="weight" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Boy:</label>
+                        <div class="col-md-9">
+                            <input type="number" name="height" class="form-control" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Ayakkabı Numarası:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="shoeSize" asp-items="Html.GetEnumSelectList<KareAjans.Entity.Enums.AyakkabıNo>()">
+                                <option value="">Hepsi</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Göz Rengi:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="eyeColor" asp-items="Html.GetEnumSelectList<KareAjans.Entity.Enums.GozRengi>()">
+                                <option value="">Hepsi</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Saç Rengi:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="hairColor" asp-items="Html.GetEnumSelectList<KareAjans.Entity.Enums.SacRengi>()">
+                                <option value="">Hepsi</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Beden:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="bodySize" asp-items="Html.GetEnumSelectList<KareAjans.Entity.Enums.Beden>()">
+                                <option value="">Hepsi</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Sürücü Belgesi:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="ehliyet">
+                                <option value="">Hepsi</option>
+                                <option value="true">Evet</option>
+                                <option value="false">Hayır</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Şehir dışı çalışma:</label>
+                        <div class="col-md-9">
+                            <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="sehirDisiCalisma">
+                                <option value="">Hepsi</option>
+                                <option value="true">Evet</option>
+                                <option value="false">Hayır</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 text-right control-label col-form-label">Yabancı Dil:</label>
+                        <div class="col-md-9">
+                            <input name="foreignLanguage" class="form-control" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+        <div class="border-top">
+            <div class="form-group row">
+                <div class="card-body">
+                    <input type="submit" value="Ara" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h5>Manken Listesi</h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Manken Id</th>
+                        <th>Manken Adı</th>
+                        <th>Manken Soyadı</th>
+                        <th>Boy</th>
+                        <th>Kilo</th>
+                        <th>Kategori</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Ad</td>
+                            <td>@item.Soyad</td>
+                            <td>@item.Boy</td>
+                            <td>@item.Kilo</td>
+                            <td>@item.Kategori</td>
+                            <td>
+                                <a href="/admin/manken/update/@item.Id" class="btn btn-warning btn-sm">Güncelle</a>
+                                <a href="/admin/manken/delete/@item.Id" class="btn btn-danger btn-sm">Sil</a>
+                                <a href="/admin/manken/getmanken/@item.Id" class="btn btn-primary btn-sm">Detay</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+

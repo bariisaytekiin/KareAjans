@@ -1,0 +1,89 @@
+﻿@model Manken
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container" style="margin-top:50px;height:500px;width:500px;">
+    <div class="mt-2">
+        <form class="border border- p-2 border-opacity-25" method="post">
+            <header>
+                <h2>Manken Oluşturma</h2>
+            </header>
+            <body>
+                <div>
+                    @using (Html.BeginForm("Create", "Manken", FormMethod.Post))
+                    {
+                        <label class="form-label">Manken Adı</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Adı" asp-for="Ad">
+                        <br />
+                        <label class="form-label">Manken Soyadı</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Soyadı" asp-for="Soyad">
+                        <br />
+                        <label class="form-label">Manken Telefon No</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Telefon No" asp-for="TelefonNo">
+                        <br />
+                        <label class="form-label">Manken Telefon No 2</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Telefon No 2" asp-for="TelefonNo2">
+                        <br />
+                        <label class="form-label">Manken Adres</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Adres" asp-for="Adres">
+                        <br />
+                        <label class="form-label">Manken Kilo</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Kilo" asp-for="Kilo">
+                        <br />
+                        <label class="form-label">Manken Boy</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Boy" asp-for="Boy">
+                        <br />
+                        <label class="form-label">Manken Özellik</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Özellik" asp-for="Özellik">
+                        <br />
+                        <label class="form-label">Manken Yabancı Dil</label>
+                        <input type="text" style="background-color:#EDF1D6" class="form-control" placeholder="Manken Yabancı Dil" asp-for="YabanciDil">
+                        <br />
+                        <label for="Cinsiyet">Cinsiyet:</label>
+                        @Html.DropDownListFor(model => model.Cinsiyet, new SelectList(new[] { "Erkek", "Kadın" }))
+                        <br />
+                        <br />
+                        <label for="AyakkabıNo">Ayakkabı No:</label>
+                        @Html.DropDownListFor(model => model.AyakkabıNo, new SelectList(new[] { 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 }))
+                        <br />
+                        <br />
+                        <label for="Beden">Beden:</label>
+                        @Html.DropDownListFor(model => model.Beden, new SelectList(new[] { "Xxs", "Xs","S","M" ,"L","Xl","Xxl" }))
+                        <br />
+                        <br />
+                        <label for="SacRengi">SaçRengi:</label>
+                        @Html.DropDownListFor(model => model.SacRengi, new SelectList(new[] { "Siyah", "Kahverengi","Sarı","Kumral" ,"Kızıl","Gri","Beyaz","Diğer" }))
+                        <br />
+                        <br />
+                        <label for="GozRengi">Göz Rengi:</label>
+                        @Html.DropDownListFor(model => model.GozRengi, new SelectList(new[] { "Siyah", "Kahverengi","Mavi","Yeşil" ,"Ela" }))
+                        <br />
+                        <br />
+                        <label for="Kategori">Kategori:</label>
+                        @Html.DropDownListFor(model => model.Kategori, new SelectList(new[] { "Kategori1", "Kategori2","Kategori3" }))
+                        <br />
+                        <br />
+                        <label for="Ehliyet">Ehliyet:</label>
+                        @Html.CheckBoxFor(model => model.Ehliyet)
+                        <br />
+                        <br />
+                        <label for="SehirDisiCalisma">Şehir Dışı Çalışma:</label>
+                        @Html.CheckBoxFor(model => model.SehirDisiCalisma)
+                        <br />
+                        <br />
+                        <label for="DogumTarihi">Doğum Tarihi:</label>
+                        @Html.TextBoxFor(model => model.DogumTarihi, "{0:yyyy-MM-dd}", new { type = "date" })
+                        <br />
+                        <br />
+
+                        <input type="submit" value="Oluştur" />
+                    }
+                </div>
+
+            </body>
+
+        </form>
+    </div>
+</div>

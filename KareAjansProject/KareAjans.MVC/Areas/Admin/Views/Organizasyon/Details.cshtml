@@ -1,0 +1,183 @@
+﻿@model OrderDetailMankenVM
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    decimal? toplamGider = 0;
+    decimal? ogunUcreti = 0;
+    decimal? konaklamaUcreti = 0;
+    decimal? gunlukUcret = 0;
+    int? id = 0;
+}
+
+<div class="container">
+    <div class="card-header">
+        <div class="d-flex justify-content-between">
+            <h5>Organizasyon Detay</h5>
+        </div>
+        <div>
+            <span>Organiasyon ID:<h5>@Model.Orders.Where(x=>x.Id==Model.OrderDetails.Select(x=>x.OrderId).FirstOrDefault()).Select(x=>x.Id).FirstOrDefault()</h5>  </span>
+            <br />
+            <span>Organiasyon Şehri: <h5>@Model.Orders.Where(x=>x.Id==Model.OrderDetails.Select(x=>x.OrderId).FirstOrDefault()).Select(x=>x.OrganizasyonSehirAdresi).FirstOrDefault()</h5> </span>
+            <br />
+            <span>Organiasyon Adresi: <h5>@Model.Orders.Where(x=>x.Id==Model.OrderDetails.Select(x=>x.OrderId).FirstOrDefault()).Select(x=>x.OrganizasyonAdresi).FirstOrDefault()</h5> </span>
+            <br />
+            <span>Organiasyon Başlangıç Tarihi: <h5>@Model.Orders.Where(x=>x.Id==Model.OrderDetails.Select(x=>x.OrderId).FirstOrDefault()).Select(x=>x.BaslangicTarihi).FirstOrDefault().ToString("dd/MM/yyyy")</h5> </span>
+            <br />
+            <span>Organiasyon Bitiş Tarihi: <h5>@Model.Orders.Where(x=>x.Id==Model.OrderDetails.Select(x=>x.OrderId).FirstOrDefault()).Select(x=>x.BitisTarihi).FirstOrDefault().ToString("dd/MM/yyyy")</h5> </span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h5>Organizasyon Detay</h5>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Adı</th>
+                        <th>Soyadı</th>
+                        <th>Boy</th>
+                        <th>Kilo</th>
+                        <th>Kategori</th>
+                        <th>Telefon No</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrderDetails)
+                    {
+
+                        var gunSayisi = (item.Order.BitisTarihi - item.Order.BaslangicTarihi).Days + 1;
+
+
+
+                        if (item.Order.OrganizasyonSehirAdresi.ToLower() == "istanbul")
+                        {
+                            @switch (item.Kategori)
+                            {
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori1:
+                                    ogunUcreti += 150 * gunSayisi;
+                                    gunlukUcret += 500 * gunSayisi;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori2:
+                                    ogunUcreti += 150 * gunSayisi;
+                                    gunlukUcret += 1000 * gunSayisi;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori3:
+                                    ogunUcreti += 150 * gunSayisi;
+
+                                    break;
+
+                            }
+                        }
+                        else
+                        {
+                            @switch (item.Kategori)
+                            {
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori1:
+                                    ogunUcreti += 150 * gunSayisi*2;
+                                    konaklamaUcreti += 500 * gunSayisi;
+                                    gunlukUcret += 500 * gunSayisi;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori2:
+                                    ogunUcreti += 150 * gunSayisi*2;
+                                    konaklamaUcreti += 500 * gunSayisi;
+                                    gunlukUcret += 1000 * gunSayisi;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori3:
+                                    ogunUcreti += 150 * gunSayisi*2;
+                                    konaklamaUcreti += 500 * gunSayisi;
+
+                                    break;
+
+                            }
+                        }
+
+
+                        <tr>
+                            <td>@item.Manken.Id</td>
+                            <td>@item.Manken.Ad</td>
+                            <td>@item.Manken.Soyad</td>
+                            <td>@item.Manken.Boy</td>
+                            <td>@item.Manken.Kilo</td>
+                            <td>@item.Kategori</td>
+                            <td>@item.Manken.TelefonNo</td>
+                        </tr>
+                        toplamGider = ogunUcreti + konaklamaUcreti + gunlukUcret;
+                        id = item.OrderId;
+                    }
+                </tbody>
+            </table>
+
+            <h5>Organizasyon Oluşturma</h5>
+            <form href="/admin/organizasyon/details" method="post" enctype="multipart/form-data">
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Adı</label>
+                    <input type="text" style="background-color:white" class="form-control" placeholder="Organizasyon Adı" name="adi">
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Şehir Adresi</label>
+                    <input type="text" style="background-color:white" class="form-control" placeholder="Organizasyon Şehir Adresi" name="adressehir">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Açık Adresi</label>
+                    <input type="text" style="background-color:white" class="form-control" placeholder="Organizasyon Açık Adresi" name="adresacik">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Başlangıç Tarihi</label>
+                    <input type="date" style="background-color:white" class="form-control" placeholder="Organizasyon Başlangıç Tarihi" name="baslangic">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Bitiş Tarihi</label>
+                    <input type="date" style="background-color:white" class="form-control" placeholder="Organizasyon Bitiş Tarihi" name="bitis">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Öğün Gideri:</label>
+                    <input type="number" style="background-color:white" class="form-control" value=@ogunUcreti name="ogunucreti" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Konaklama Gideri:</label>
+                    <input type="number" style="background-color:white" class="form-control" value=@konaklamaUcreti name="konaklamaucreti" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Günlük Ücret Gideri(3. Kategori Mankenler Hariç.):</label>
+                    <input type="number" style="background-color:white" class="form-control" value=@gunlukUcret name="gunlukucret" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Organizasyon Gideri(3. Kategori Mankenin Alacağı Ücreti Hariç): @toplamGider TL.</label>
+                    <br />
+                    <label class="form-label">3. Kategori Manken Sayısına ve Ücretine Göre Bir Fiyat Belirleyin:</label>
+                    <input type="number" style="background-color:white" class="form-control" placeholder="Organizasyon Fiyatı" name="butce">
+                </div>
+
+                <div>
+                    <input type="hidden" style="background-color:white" class="form-control" value=@id name="orderdetailsid" readonly>
+                </div>
+
+                <input type="submit" value="Gönder" />
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,151 @@
+﻿@model OrganizasyonGeliGiderVM
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_MuhasebeLayout.cshtml";
+    decimal? toplamGider = 0;
+    decimal? toplamGelir = 0;
+    decimal? kar = 0;
+    decimal? ogunUcreti = 0;
+    decimal? konaklamaUcreti = 0;
+    decimal? gunlukUcret = 0;
+    int? id = 0;
+    int? toplmaGelirInt = 0;
+    int? toplmaGiderInt = 0;
+
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h5>Organizasyon Detay</h5>
+            </div>
+            <div>
+                <span>Organiasyon ID:<h5>@Model.OrganizasyonGiderleri.Select(x=>x.OrganizasyonId).FirstOrDefault()</h5>  </span>
+                <br />
+                <span>Organiasyon Adı: <h5>@Model.Organizasyonlar.Where(x=>x.Id==Model.OrganizasyonGiderleri.Select(x=>x.OrganizasyonId).FirstOrDefault()).Select(x=>x.OrganizasyonAdi).FirstOrDefault()</h5> </span>
+                <br />
+                <span>Organiasyon Başlangıç Tarihi: <h5>@Model.Organizasyonlar.Where(x=>x.Id==Model.OrganizasyonGiderleri.Select(x=>x.OrganizasyonId).FirstOrDefault()).Select(x=>x.BaslangicTarihi).FirstOrDefault().ToString("dd/MM/yyyy")</h5> </span>
+                <br />
+                <span>Organiasyon Bitiş Tarihi: <h5>@Model.Organizasyonlar.Where(x=>x.Id==Model.OrganizasyonGiderleri.Select(x=>x.OrganizasyonId).FirstOrDefault()).Select(x=>x.BitisTarihi).FirstOrDefault().ToString("dd/MM/yyyy")</h5> </span>
+                <br />
+                <span>Organiasyon Şehri: <h5>@Model.Adresler.Where(x=>x.Id==Model.Organizasyonlar.Select(x=>x.AdresId).FirstOrDefault()).Select(x=>x.Sehir).FirstOrDefault()</h5> </span>
+                <br />
+                <span>Organiasyon Adresi: <h5>@Model.Adresler.Where(x=>x.Id==Model.Organizasyonlar.Select(x=>x.AdresId).FirstOrDefault()).Select(x=>x.AcikAdres).FirstOrDefault()</h5> </span>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Manken Adı</th>
+                        <th>Manken Soyadı</th>
+                        <th>Kategori</th>
+                        <th>Öğün Ücreti</th>
+                        <th>Konaklama Ücreti </th>
+                        <th>Günlük Ücret</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrganizasyonGiderleri)
+                    {
+                        var gunSayisi = (item.Organizasyon.BitisTarihi - item.Organizasyon.BaslangicTarihi).Days + 1;
+
+
+
+                        if (Model.Adresler.Where(x => x.Id == item.Organizasyon.AdresId).Select(x => x.Sehir).FirstOrDefault().ToLower() == "istanbul")
+                        {
+                            @switch (Model.Mankenler.Where(x => x.Id == item.MankenId).Select(x => x.Kategori).FirstOrDefault())
+                            {
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori1:
+                                    ogunUcreti = 150 * gunSayisi;
+                                    gunlukUcret = 500 * gunSayisi;
+                                    toplamGider += ogunUcreti + konaklamaUcreti + gunlukUcret;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori2:
+                                    ogunUcreti = 150 * gunSayisi;
+                                    gunlukUcret = 1000 * gunSayisi;
+                                    toplamGider += ogunUcreti + konaklamaUcreti + gunlukUcret;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori3:
+                                    ogunUcreti = 150 * gunSayisi;
+                                    gunlukUcret = Convert.ToInt32(item.GunlukUcret);
+                                    toplamGider += ogunUcreti + konaklamaUcreti + gunlukUcret;
+
+                                    break;
+
+                            }
+                        }
+                        else
+                        {
+                            @switch (Model.Mankenler.Where(x => x.Id == item.MankenId).Select(x => x.Kategori).FirstOrDefault())
+                            {
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori1:
+                                    ogunUcreti = 150 * gunSayisi*2;
+                                    konaklamaUcreti = 500 * gunSayisi;
+                                    gunlukUcret = 500 * gunSayisi;
+                                    toplamGider += ogunUcreti + konaklamaUcreti + gunlukUcret;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori2:
+                                    ogunUcreti = 150 * gunSayisi*2;
+                                    konaklamaUcreti = 500 * gunSayisi;
+                                    gunlukUcret = 1000 * gunSayisi;
+                                    toplamGider += ogunUcreti + konaklamaUcreti + gunlukUcret;
+
+                                    break;
+
+                                case KareAjans.Entity.Enums.MankenKategori.Kategori3:
+                                    ogunUcreti = 150 * gunSayisi *2;
+                                    konaklamaUcreti = 500 * gunSayisi;
+                                    gunlukUcret =Convert.ToInt32(item.GunlukUcret);
+                                    toplamGider += ogunUcreti + konaklamaUcreti + gunlukUcret;
+                                    break;
+
+                            }
+                        }
+                        <tr>
+                            <td>@Model.Mankenler.Where(x=>x.Id==item.MankenId).Select(x=>x.Ad).FirstOrDefault()</td>
+                            <td>@Model.Mankenler.Where(x=>x.Id==item.MankenId).Select(x=>x.Soyad).FirstOrDefault()</td>
+                            <td>@Model.Mankenler.Where(x=>x.Id==item.MankenId).Select(x=>x.Kategori).FirstOrDefault()</td>
+                            <td>@ogunUcreti</td>
+                            <td>@konaklamaUcreti</td>
+                            <td>@gunlukUcret</td>
+                        </tr>
+
+                        toplamGelir = item.Butce;
+                        kar = toplamGelir - toplamGider;
+                        toplmaGelirInt=Convert.ToInt32(toplamGelir);
+                        toplmaGiderInt = Convert.ToInt32(toplamGider);
+                    }
+                </tbody>
+                
+            </table>
+            <div>
+                <span><h5>Toplam Gelir: @toplmaGelirInt TL</h5></span>
+                <span><h5>Toplam Gider: @toplmaGiderInt TL</h5></span>
+                <span><h5>KÂR: @kar TL</h5></span>
+            </div>
+            @{
+                Html.BeginForm("CreatePDFDocument", "Organizasyon", FormMethod.Get);
+                {
+                    <div>
+                        <input type="hidden" name="gelir" value="@toplmaGelirInt" />
+                        <input type="hidden" name="gider" value="@toplamGider" />
+                        <input type="hidden" name="id" value="@Model.OrganizasyonGiderleri.Select(x=>x.OrganizasyonId).FirstOrDefault()" />
+                        <input type="submit" value="PDF Dönüştür" style="width:300px;height:27px" />
+                    </div>
+                }
+                Html.EndForm();
+            }
+        </div>
+    </div>
+</div>
+
+

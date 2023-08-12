@@ -1,0 +1,49 @@
+﻿@model MankenFotografVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_MuhasebeLayout.cshtml";
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h5>Manken Listesi</h5>
+                <a href="/admin/manken/search" class="btn btn-primary btn-sm">Manken Arama</a>
+                <a href="/admin/manken/create" class="btn btn-primary btn-sm">Manken Ekle</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Manken Id</th>
+                        <th>Manken Adı</th>
+                        <th>Manken Soyadı</th>
+                        <th>Boy</th>
+                        <th>Kilo</th>
+                        <th>Kategori</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Mankenler)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Ad</td>
+                            <td>@item.Soyad</td>
+                            <td>@item.Boy</td>
+                            <td>@item.Kilo</td>
+                            <td>@item.Kategori</td>
+                            <td>
+                                <a href="/muhasebe/manken/getmanken/@item.Id" class="btn btn-primary btn-sm">Detay</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

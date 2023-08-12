@@ -1,0 +1,82 @@
+﻿@model MankenFotografVM
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        <span>@TempData["Success"]</span>
+    </div>
+}
+<div>
+    <span><h2>Modellerimiz</h2></span>
+</div>
+@if (User.Identity.IsAuthenticated)
+{
+    <form href="/Home/Index" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label">Organizasyon Başlangıç Tarihi</label>
+            <input type="date" style="background-color:white" class="form-control" placeholder="Organizasyon Başlangıç Tarihi" name="baslangic">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Organizasyon Bitiş Tarihi</label>
+            <input type="date" style="background-color:white" class="form-control" placeholder="Organizasyon Bitiş Tarihi" name="bitis">
+        </div>
+
+        <div>
+            <select class="form-select" aria-label="Default select example" name="sehirdisicalisma">
+                <option selected>Şehir Dışı Çalışma</option>
+                <option value="true">Evet</option>
+                <option value="false">Hayır</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Gönder" />
+    </form>
+}
+
+
+<thead>
+    <div class="d-flex">
+        <div class="p-2 w-100"><b>@ViewData["Title"]</b></div>
+
+    </div>
+</thead>
+<div><h5>@ViewBag.Kayit</h5> </div>
+<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+    @foreach (var item in Model.Mankenler)
+    {
+        <div class="col mb-5">
+            <div class="card h-100">
+                
+                @if (Model.Fotograflar.FirstOrDefault(x => x.MankenId == item.Id) != null)
+                {
+                    <img src="~/images/manken/@Model.Fotograflar.FirstOrDefault(x=>x.MankenId==item.Id).Url" class="card-img-top" width="150" height="250" />
+
+                }
+                else
+                {
+                    <img src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png" alt="product image" class="card-img-top" width="150" height="250" />
+                }
+
+
+                
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        
+                        <h5 class="fw-bolder">@item.Ad @item.Soyad</h5>
+                        
+                        Boy:@item.Boy Kilo:@item.Kilo
+                    </div>
+                </div>
+                
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/manken/details/@item.Id">Detay</a></div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/Home/AddToOrganization/@item.Id">Organizasyona Ekle</a></div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

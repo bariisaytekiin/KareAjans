@@ -1,0 +1,19 @@
+﻿@model Microsoft.AspNetCore.Identity.IdentityUser
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="col-md-6 mx-auto">
+        <h2>Merhaba! @Model.UserName</h2>
+        <ul class="list-group mb-5">
+            <li class="list-group-item">
+                <a href="/User/MyOrganizasyon/@Model.Id" class="btn btn-default btn-sm"> Organizasyonlar</a>
+            </li>
+            <li class="list-group-item">
+                <a asp-action="Logout" asp-controller="User" class="btn btn-default btn-sm"> Logout </a>
+            </li>
+        </ul>
+    </div>
+</div>

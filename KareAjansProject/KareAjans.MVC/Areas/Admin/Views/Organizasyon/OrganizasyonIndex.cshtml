@@ -1,0 +1,45 @@
+﻿@model List<Organizasyon>
+@{
+    ViewData["Title"] = "OrganizasyonIndex";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h5>Organizasyon Listesi</h5>
+                <a href="/Admin/Organizasyon/OrganizasyonOlustur/" class="btn btn-primary btn-sm">Organizasyon Oluştur</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Organizasyon Id</th>
+                        <th>Organizasyon Adıı</th>
+                        <th>Başlangıç Tarihi</th>
+                        <th>Bitiş Tarihi</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.OrganizasyonAdi</td>
+                            <td>@item.BaslangicTarihi.ToString("dd/MM/yyyy")</td>
+                            <td>@item.BitisTarihi.ToString("dd/MM/yyyy")</td>
+                            <td>
+                                <a href="/Admin/Organizasyon/OrganizasyonDetails/@item.Id" class="btn btn-primary btn-sm">Detay</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

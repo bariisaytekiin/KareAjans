@@ -1,0 +1,17 @@
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\bin\Debug\net6.0\KareAjans.DAL.deps.json
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\bin\Debug\net6.0\KareAjans.DAL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\bin\Debug\net6.0\KareAjans.DAL.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.csproj.AssemblyReference.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.AssemblyInfoInputs.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.AssemblyInfo.cs
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.csproj.CoreCompileInputs.cache
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\refint\KareAjans.DAL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\ref\KareAjans.DAL.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\bin\Debug\net6.0\KareAjans.DAL.runtimeconfig.json
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\bin\Debug\net6.0\KareAjans.Entity.dll
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\bin\Debug\net6.0\KareAjans.Entity.pdb
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.csproj.CopyComplete
+D:\Documents\Desktop\Bilge Adam\Kare Ajans\KareAjansProject\KareAjans.DAL\obj\Debug\net6.0\KareAjans.DAL.genruntimeconfig.cache
